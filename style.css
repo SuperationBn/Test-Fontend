@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background: #eeeeee;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+header {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+header div {
+  text-align: center;
+}
+
+header div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+main section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-Grid-Box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  gap: 1rem;
+  background: #FFFFFF;
+}
+
+.card .categoria {
+  background: #DD2025;
+  padding: 0.5rem;
+}
+
+.card .categoria h4 {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card .textCard span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #464646;
+}
+
+.card .imgCard {
+  width: 100%;
+}
+
+.card .imgCard img {
+  width: 100%;
+}
+
+.card .textCard h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+.card .textCard p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.card .userCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .userCard span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+main .seeMore {
+  cursor: pointer;
+  max-width: fit-content;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 10px 24px;
+  background: #DD2025;
+}
+
+main .seeMore h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+/* ----------------------------- */
+
+/* Media Queri */
+@media (max-width: 727px) {
+  .card-Grid-Box .card {
+    max-width: 448px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 459px) {
+  main section {
+    padding: 0rem 0.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .card-Grid-Box {
+    grid-template-columns: 1fr;
+  }
+
+  .card .userCard img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ----------------------------- */
